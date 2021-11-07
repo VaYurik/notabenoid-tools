@@ -10,5 +10,5 @@ backup_project.py - *скрипт для экспорта проекта пер�
 search_string.py - *скрипт поиска подстроки во всех главах проекта перевода с сайта Notabenoid.org*
 
 ### Пример запуска:
-<python backup_project.py http://notabenoid.org/book/78978 ваш_логин ваш_пароль>
-<python search_string.py http://notabenoid.org/book/73676 "большие сиськи" t ваш_логин ваш_пароль>
+`python backup_project.py http://notabenoid.org/book/78978 ваш_логин ваш_пароль`
+`python search_string.py http://notabenoid.org/book/73676 "большие сиськи" t ваш_логин ваш_пароль`
