@@ -9,7 +9,7 @@ import re
 import requests
 
 print('Searching a substring in the Notabenoid.org translation project')
-print('Version 1.2')
+print('Version 1.21')
 print('http://vayurik.ru', end = '\n\n')
 
 # Проверяем переданные параметры
@@ -42,7 +42,7 @@ password = sys.argv[5]
 
 # Функция выдачи сообщения об ошибке
 def show_error(error_str):
-  print('Error: ' + error_str)
+  print('Error: ' + error_str, ' '*120)
   exit()
 
 # Функция получения страницы
@@ -108,7 +108,7 @@ for chapter in chapters:
   chapter_num += 1
 
 
-print('Search completed!\n')
+print('Search completed!', ' '*120, '\n')
 print(f'Substring found in {len(results)} chapters')
 for result in results:
   print(f'{result[1]}\t{result[0]}')

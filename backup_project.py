@@ -11,7 +11,7 @@ import html
 import zipfile
 
 print('Creating a backup of the Notabenoid.org translation project')
-print('Version 1.2')
+print('Version 1.21')
 print('http://vayurik.ru', end = '\n\n')
 
 # Проверяем переданные параметры
@@ -34,7 +34,7 @@ password = sys.argv[3]
 
 # Функция выдачи сообщения об ошибке
 def show_error(error_str):
-  print('Error: ' + error_str)
+  print('Error: ' + error_str, ' '*120)
   exit()
 
 # Функция получения страницы
@@ -140,5 +140,5 @@ try:
   zip_file.close()
 except:
   show_error(f'Can\'t close archive {zip_file_name}')
-print('Backup completed!\n')
+print('Backup completed!', ' '*120, '\n')
 print(f'File {zip_file_name} created')
